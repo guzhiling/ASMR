@@ -1,0 +1,35 @@
+---
+title: "Input & Analysis of Sound"
+output: html_document
+author: Zhiling
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r packages}
+if(!require("seewave")){install.packages("seewave")}
+if(!require("tuneR")){install.packages("tuneR")}
+if(!require("audio")){install.packages("audio")}
+
+library(seewave, audio, tuneR)
+```
+
+## Input sample
+
+```{r readin}
+## tuneR
+dat = readMP3("sample/sample1_trimmed.mp3") 
+dat.left = mono(dat, which = c("left"))
+dat.right = mono(dat, which = c("right"))
+```
+
+## Visualization
+
+```{r visualization}
+plot(dat, info = FALSE, xunit = c("time", "samples"),
+ylim = NULL, main = NULL, sub = NULL, xlab = NULL, ylab = NULL, simplify = TRUE, nr = 200, axes = TRUE, yaxt = par("yaxt"), las = 1, center = TRUE)
+```
