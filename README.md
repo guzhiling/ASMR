@@ -26,3 +26,8 @@ There are several packages available for audio processing in r.
 - [seewave](https://cran.r-project.org/web/packages/seewave/vignettes/seewave_IO.pdf)
 - [tuneR](https://cran.r-project.org/web/packages/tuneR/tuneR.pdf)
 - [audio](https://cran.r-project.org/web/packages/audio/audio.pdf)
+
+
+### Algorithmic Composition 
+[wiki](https://en.wikipedia.org/wiki/Algorithmic_composition#Translational_models)
+
